@@ -1,0 +1,7 @@
+httpx
+pandas
+geopandas
+eland
+elasticsearch
+elasticsearch-dsl
+pytest
