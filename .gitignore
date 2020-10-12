@@ -2,3 +2,4 @@
 *.csv
 *.geojson
 .DS_Store
+assets/pd_calls_for_service_2015_datasd.csv assets/pd_calls_for_service_2016_datasd.csv assets/pd_calls_for_service_2017_datasd.csv assets/pd_calls_for_service_2018_datasd.csv assets/pd_calls_for_service_2019_datasd.csv assets/pd_calls_for_service_2020_datasd.csv assets/us_ca_city_of_san_diego-addresses-city.geojson
