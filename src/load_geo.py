@@ -51,7 +51,9 @@ def load_file(address_file):
 @click.option(
     "-F", "--force", default=False, help="Add the items, deleting an existing index"
 )
-def index_geo(force):
+@click.argument("geo_file", type=click.Path(exists=True))
+def index_geo(force, geo_file):
+    """loads geoJSON file to your elasticsearch index"""
 
     if index.exists:
 
@@ -64,7 +66,7 @@ def index_geo(force):
                 Delete the index and try again or use -F to force the update"
             )
 
-    gdf_json = load_file("./us_ca_city_of_san_diego-addresses-city.geojson")
+    gdf_json = load_file(geo_file)
 
     for _ in parallel_bulk(es, index="sd_geo", actions=load_geo_json_data(gdf_json)):
         pass
