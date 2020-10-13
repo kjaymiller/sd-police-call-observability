@@ -5,3 +5,4 @@ eland
 elasticsearch
 elasticsearch-dsl
 pytest
+typer

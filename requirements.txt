@@ -7,7 +7,7 @@
 attrs==20.2.0             # via fiona, pytest
 certifi==2020.6.20        # via elasticsearch, httpx, matplotlib
 click-plugins==1.1.1      # via fiona
-click==7.1.2              # via fiona
+click==7.1.2              # via fiona, typer
 cligj==0.5.0              # via fiona
 cycler==0.10.0            # via matplotlib
 eland==7.9.1a1            # via -r requirements.in
@@ -39,4 +39,5 @@ shapely==1.7.1            # via geopandas
 six==1.15.0               # via elasticsearch-dsl, fiona, packaging, python-dateutil
 sniffio==1.2.0            # via httpcore, httpx
 toml==0.10.1              # via pytest
+typer==0.3.2              # via -r requirements.in
 urllib3==1.25.10          # via elasticsearch
