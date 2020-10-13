@@ -1,8 +1,9 @@
-httpx
-pandas
-geopandas
+black 
+click
 eland
 elasticsearch
 elasticsearch-dsl
+httpx
+geopandas
+pandas
 pytest
-typer
